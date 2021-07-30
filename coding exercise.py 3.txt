@@ -1,0 +1,74 @@
+#questions asked randomly so i imported random package from library
+import random
+ #function for display section
+#omitted instructions
+
+     def main_menu():
+         print("""""""""""""""""""""""""""""""""""""""""""""""")
+         print("_Welcome to The world bingo Chidinma__________")
+         print("Author Name: Chidinma_________________________")
+         print("Game Purpose: Fun_____________________________")
+         print("Game Name: Bingo______________________________")
+         print("Version Release: 21__________________________")
+         print("Copyright Details_____________________________")
+       main_menu()
+       #happy to start game
+      instructions=input('Are you happy to play the game with the rules:')
+      if response== 'yes':
+      new_game()
+      else:
+          print('Sad to see you go Chidinma. We hope to see you next time!!')
+#dictionary of questions
+      questions= {  
+      'roses are red?: a':'',
+      'great britain is made up of four countries?: ': 'a',
+      'Zebras are striped?: a': '',
+      'lions roar?: a': '',
+      'The earth is triangle shape?: ': 'a',
+      'Total number of student in the coding class is five?:a': '',
+      'a football is circle shaped?: a': '',
+      'England won european cup in 2021?: ': 'b',
+      'It will rain today?:a ': '',
+      'Peaches are white?: ': 'b',
+      }
+      #collection of questions for indexting
+      options=['a.Yes', 'b.No', 'c.I dont know']
+   #function for start of game 
+def new_game()
+guesses=[]
+correct_guesses=10
+random.shuffle(questions)
+user= input('What is your name:?')
+question_num1
+for key in questions:
+    print(key)
+    for i in options[questions_num-1]:
+        print(i)
+        guess = input("enter(a,b,or c):")
+        guess= guess.upper()
+        guess= guess.lower()
+        guesses.append(guess)
+        correct guesses += check_answer(questions.get(key),guess)
+        #function to check answers corresponde to questions
+def check_answer(options,guess):     
+      if guess ==options[0]:
+       print('Congrats Chidinma. You got 10 points!!'.)
+       return 10
+      else:
+      print('Aww, what a shame. That wasn’t the correct answer. You got 0 points'.)
+      return 0
+if total score == 40:
+    print('Bravo, bravo chidinma! You've won the round!')
+    else:
+        print('oh dear. So close and yet so far. Good luck next time Chidinma!')
+       # incase the gamer wants to repeat game 
+ def play_again     
+      response=input('Would you like to play again?(yes or no):')
+      if reponse=='yes':
+          new_game()
+          else:
+              print('Thank you for playing Bingo. See you next time!')
+              print('The End.')
+              quit()
+
+    

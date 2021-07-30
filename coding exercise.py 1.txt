@@ -1,0 +1,10 @@
+#################################################################
+#delare a variable and assign an input value. the value can be a float or an integer  
+userIn=int(input('Enter weight in (KG) to convert to (Lbs):'))
+
+#multiplied the variable with the convertion rate given
+amount_InLb=userIn*2.205
+
+#printed the conversion value
+print(amount_InLb)
+print(userIn,' Kilograms (KG) is equal to', amount_InLb,'Pounds(Lbs)')
