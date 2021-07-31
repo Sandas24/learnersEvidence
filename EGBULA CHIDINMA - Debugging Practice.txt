@@ -1,0 +1,41 @@
+﻿DEMO CLASS EXERCISE
+Consider at the following code:
+Def Cal_force(mass, g)
+   knowing the mass and gravity you calculate the weight:
+   Phy_force = mass * g;
+   print(“%.2f kg of mass gives a weight of %.2f N” %(,phy_force))
+Clearly, there several things wrong with it. Using your python expertise, fix this broken code to make
+the program functional.
+a.
+ During the fixing process, record the bugs you encounter. Show how you fixed them.
+b.
+ You can use either python internal debugging tool to identify bugs or can do the process
+manually.
+c.
+ Test the fixed program to see if it meets its primary purpose of calculating weights. Take
+screenshots to demonstrate your procedure. Tips: use a testing range of 0 to 3 kg. For the
+expected outputs, take g = 9.8 and 2.5
+ 
+Error 1:
+Syntax Error: invalid syntax
+Possible cause: I did not define the function Cal_force properly. Python function requires a  semi colon (:)at the end of () thus the error.
+Correction:
+Def cal_force(mass,g):
+Error 2:
+Possible cause:
+Phy_force= mass*g is the undefined.
+Correction:
+cal_force(mass*g) as a return statement.
+ 
+Error 3:
+Possible cause:
+print(“%.2f kg of mass gives a weight of %.2f N” %(,phy_force))-conversion is different from the argument.(g),(Kg). function phy_force parsed is undefined
+Correction:
+print(“%.2f kg of mass gives a weight of %.2f” %(cal_force))
+ 
+
+
+Def cal_force(mass,g):
+ #  knowing the mass and gravity you calculate the weight:
+   print(“%.2f of mass gives a weight of %.2f” %(cal_force)) 
+cal_force(10 *9.8)
